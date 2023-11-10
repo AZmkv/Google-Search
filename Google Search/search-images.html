@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пошук зображень Google</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="search-container">
+        <form action="https://www.google.com/search" method="GET" onsubmit="return validateSearchInput()">
+            <input type="text" name="q" id="search-input" class="search-input" placeholder="Введіть ваш запит">
+            <input type="hidden" name="tbm" value="isch">
+            <input type="submit" value="Пошук зображень" class="search-button">
+        </form>
+    </div>
+    <a href="index.html" class="nav-link">Пошук Google</a>
+    <a href="advanced-search.html" class="nav-link">Розширений пошук</a>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Розширений пошук Google</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="advanced-search">
+        <form action="https://www.google.com/search" method="GET" onsubmit="return validateAdvancedSearch()">
+            <div class="search-field">
+                <label for="all-words">Знайти сторінки із... «усіма цими словами»:</label>
+                <input type="text" id="all-words" name="as_q" class="search-input">
+            </div>
+            
+            <div class="search-field">
+                <label for="exact-phrase">Знайти сторінки з... «саме цим словом або фразою»:</label>
+                <input type="text" id="exact-phrase" name="as_epq" class="search-input">
+            </div>
+
+            <div class="search-field">
+                <label for="any-words">Знайти сторінки з... «будь-яким із цих слів»:</label>
+                <input type="text" id="any-words" name="as_oq" class="search-input">
+            </div>
+
+            <div class="search-field">
+                <label for="none-words">Знайти сторінки з... «жодне з цих слів»:</label>
+                <input type="text" id="none-words" name="as_eq" class="search-input">
+            </div>
+
+            <input type="hidden" name="as_st" value="y">
+            <input type="hidden" name="as_dt" value="i">
+            <input type="hidden" name="as_sitesearch" value="">
+            
+            <input type="submit" value="Розширений пошук" class="advanced-search-button">
+        </form>
+    </div>
+    <a href="index.html" class="nav-link">Пошук Google</a>
+    <a href="search-images.html" class="nav-link">Пошук зображень</a>
+</body>
+</html>
